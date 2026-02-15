@@ -1,0 +1,152 @@
+#seccion-presentacion {
+  position: relative;
+  padding: 100px 20px;
+  background:
+    linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0.92),
+      rgba(244, 244, 244, 0.88)
+    ),
+    url("../folder/fondo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body.dark-mode #seccion-presentacion {
+  background:
+    linear-gradient(
+      120deg,
+      rgba(2, 6, 23, 0.92),
+      rgba(15, 23, 42, 0.9)
+    ),
+    url("../folder/fondo.png");
+}
+
+  
+  .presentacion-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+  }
+  
+  .presentacion-texto .badge {
+    display: inline-block;
+    background: var(--color-identidad);
+    color: var(--texto-boton);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+  }
+  
+  .presentacion-texto h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: var(--texto-presentacion);
+    line-height: 1.1;
+    margin-bottom: 25px;
+  }
+  
+  .presentacion-texto p {
+    font-size: 1.15rem;
+    color: var(--texto-secundario);
+    max-width: 520px;
+    margin-bottom: 40px;
+  }
+  
+  .presentacion-cta {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  
+  .link-secundario {
+    font-weight: 600;
+    color: var(--color-identidad);
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .link-secundario::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: var(--color-identidad);
+    transition: width 0.3s ease;
+  }
+  
+  .link-secundario:hover::after {
+    width: 100%;
+  }
+  
+  .presentacion-imagen img {
+    width: 100%;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    transform: perspective(1200px) rotateY(-6deg);
+    transition: transform 0.5s ease;
+  }
+
+  .presentacion-imagen img:hover {
+    transform: perspective(1200px) rotateY(0deg) scale(1.02);
+  }
+
+  
+  @media (max-width: 900px) {
+  
+    .presentacion-grid {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .presentacion-texto {
+      display: contents;
+    }
+  
+    .badge {
+      order: 1;
+    }
+  
+    h1 {
+      order: 2;
+      font-size: 2.1rem;
+      line-height: 1.15;
+    }
+  
+    .presentacion-texto p {
+      order: 4;
+      max-width: 520px;
+      line-height: 1.6;
+    }
+  
+    .presentacion-imagen {
+      order: 3;
+      width: 100%;
+    }
+  
+    .presentacion-imagen img {
+      width: 100%;
+      max-height: 240px;
+      object-fit: cover;
+      border-radius: 16px;
+      display: block;
+    }
+    
+    .presentacion-cta {
+      order: 5;
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      margin-top: 0px;
+    }
+  }
+  
+  

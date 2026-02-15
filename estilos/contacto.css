@@ -1,0 +1,140 @@
+.seccion {
+    padding: 80px 20px;
+  }
+  
+
+  .contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-top: 40px;
+    align-items: stretch;
+  }
+
+  .form-contacto {
+    width: 100%;
+    padding: 35px;
+    background-color: var(--fondo1);
+    border-radius: 14px;
+    box-shadow: var(--sombra);
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .form-contacto input,
+  .form-contacto textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    color: var(--texto-principal);
+    padding: 16px 18px;
+    font-size: 1.05rem;
+    border-radius: 10px;
+    border: 1px solid var(--borde-cartas);
+    background-color: var(--fondo-input);
+    font-family: inherit;
+  
+    resize: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .form-contacto textarea {
+    resize: vertical;
+    min-height: 140px;
+    max-height: 320px;
+    overflow-y: auto;
+  }
+  .form-contacto input:focus,
+  .form-contacto textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-identidad);
+  }
+  .form-contacto button {
+    align-self: center;
+    margin-top: 10px;
+    padding: 14px 34px;
+    font-size: 1.05rem;
+    border-radius: 25px;
+  }
+  
+  /*Información contacto*/
+  
+  .info-contacto {
+    background: var(--fondo1);
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: var(--sombra);
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    border-left: 5px solid var(--color-identidad);
+  }
+  
+  .info-contacto h3 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: var(--color-identidad);
+  }
+  
+  .info-contacto p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--texto-principal);
+  }
+  
+  .info-contacto strong {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--color-identidad);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+  
+  .info-contacto a {
+    color: var(--texto-principal);
+    text-decoration: none;
+  }
+  
+  .info-contacto a:hover {
+    text-decoration: underline;
+  }
+  
+  /*Mapa*/ 
+  
+  .mapa {
+    margin-top: 10px;
+    overflow: hidden;
+    border-radius: 14px;
+    box-shadow: var(--sombra);
+  }
+  
+  .mapa iframe {
+    width: 100%;
+    height: 240px;
+    border: none;
+    display: block;
+  }
+  
+  @media (max-width: 900px) {
+    .contacto-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .form-contacto,
+    .info-contacto {
+      padding: 28px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .seccion {
+      padding: 60px 15px;
+    }
+  
+    .seccion h2 {
+      font-size: 2rem;
+    }
+  }
+  
+

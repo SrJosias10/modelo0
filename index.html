@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Modelo Profesional</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="estilos/presentacion.css">
+    <link rel="stylesheet" href="estilos/general.css">
+    <link rel="stylesheet" href="estilos/encabezado.css">
+    <link rel="stylesheet" href="estilos/sobre-mi.css">
+    <link rel="stylesheet" href="estilos/contacto.css">
+
+    <script type="module" src="code.js"></script>
+</head>
+
+<body>
+
+<!-- SPLASH -->
+<div id="splash">
+    <video autoplay muted playsinline>
+        <source src="folder/splash.mp4" type="video/mp4">
+    </video>
+</div>
+
+<button id="dark-mode-toggle" class="floating-btn dark-btn" title="Cambiar modo">
+  <i class="fa-solid fa-moon"></i>
+</button>
+
+<button id="scroll-up" class="floating-btn scroll-btn" title="Subir">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<!-- HEADER -->
+<section id="opciones" class="fondo-secciones">
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <div class="logo-img">
+                <img src="folder/logo.png" alt="Logo profesional">
+            </div>
+        </a>
+
+        <div class="menu-links" id="menu-links">
+            <a href="#sobre-mi" class="linksmenu">Sobre mí</a>
+            <a href="#conocimientos" class="linksmenu">Conocimientos</a>
+            <a href="#proyectos" class="linksmenu">Proyectos</a>
+            <a href="#contacto" class="linksmenu">Contacto</a>
+        </div>
+
+        <button class="menu-toggle" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+</section>
+
+<!-- PRESENTACIÓN -->
+<section id="seccion-presentacion">
+    <div class="presentacion-grid">
+  
+      <div class="presentacion-texto">
+        <span class="badge">Diseño profesional</span>
+        <h1>Tu presencia digital empieza acá</h1>
+        <p>
+          Diseñamos páginas web modernas, rápidas y pensadas para convertir visitas en clientes.
+          Mostrá tu trabajo con una imagen profesional y diferenciá tu marca desde el primer segundo.
+        </p>
+  
+        <div class="presentacion-cta">
+          <button class="button">Contactar</button>
+          <a href="#proyectos" class="link-secundario">Ver proyectos</a>
+        </div>
+      </div>
+  
+      <div class="presentacion-imagen">
+        <img src="folder/hero-web.png" alt="Diseño web profesional">
+      </div>
+  
+    </div>
+  </section>
+  
+
+<!-- SOBRE MÍ -->
+<section id="sobre-mi" class="seccion">
+  <div class="contenedor">
+    <h2>Sobre mí</h2>
+    <div class="contenedor-foto">
+      <img src="folder/yo.png" 
+           alt="Desarrollador web profesional" class="foto-perfil">
+      <div class="etiqueta-foto">Desarrollador Web</div>
+    </div>
+    <p>
+      Creo páginas web de información y portafolios para profesionales y empresas que desean mostrarse 
+      al mercado de forma efectiva. Mi servicio incluye diseño, desarrollo y soporte completo para 
+      que tu presencia digital destaque.
+    </p>
+    
+    <div class="cartas">
+      <div class="card-custom">
+        <i class="fas fa-file-code"></i>
+        <h3>Páginas Web de Portafolio</h3>
+        <p>Desarrollo sitios web informativos profesionales que muestran tu trabajo, experiencia y habilidades de manera atractiva y efectiva.</p>
+        <span class="etiqueta-servicio">Servicio Principal</span>
+      </div>
+      
+      <div class="card-custom">
+        <i class="fas fa-globe"></i>
+        <h3>Instalación de Dominio</h3>
+        <p>Configuro y conecto tu dominio personalizado para que tengas una presencia profesional con tu propia dirección web.</p>
+        <span class="etiqueta-servicio">Servicio Adicional</span>
+      </div>
+      
+      <div class="card-custom">
+        <i class="fas fa-sync-alt"></i>
+        <h3>Actualizaciones Futuras</h3>
+        <p>Gracias al almacenamiento en GitHub, podremos modificar o actualizar tu página fácilmente cuando tu negocio crezca o cambie.</p>
+        <span class="etiqueta-servicio">Beneficio Adicional</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONOCIMIENTOS -->
+<section id="conocimientos" class="seccion fondo-alterno">
+    <div class="contenedor">
+        <h2>Conocimientos</h2>
+
+        <div class="cartas">
+            <div class="card-custom">
+                <i class="fa-solid fa-code"></i>
+                <h3>Desarrollo Web</h3>
+                <p>HTML, CSS, JavaScript, buenas prácticas y rendimiento.</p>
+            </div>
+
+            <div class="card-custom">
+                <i class="fa-solid fa-palette"></i>
+                <h3>Diseño UI</h3>
+                <p>Interfaces modernas, limpias y orientadas al usuario.</p>
+            </div>
+
+            <div class="card-custom">
+                <i class="fa-solid fa-briefcase"></i>
+                <h3>Soluciones Profesionales</h3>
+                <p>Webs institucionales listas para producción.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROYECTOS -->
+<section id="proyectos" class="seccion">
+    <div class="contenedor">
+        <h2>Proyectos</h2>
+
+        <div class="cartas">
+            <div class="proyecto">
+                <img src="folder/proyecto1.jpg" alt="Proyecto ejemplo">
+                <div class="info-proyecto">
+                    <h3>Proyecto Institucional</h3>
+                    <p>Web profesional orientada a servicios y captación de clientes.</p>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <img src="folder/proyecto2.jpg" alt="Proyecto ejemplo">
+                <div class="info-proyecto">
+                    <h3>Landing Page</h3>
+                    <p>Diseño moderno y enfocado en conversión.</p>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <img src="folder/proyecto3.jpg" alt="Proyecto ejemplo">
+                <div class="info-proyecto">
+                    <h3>Plataforma Digital</h3>
+                    <p>Estructura escalable y adaptable a distintos rubros.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contacto" class="seccion fondo-alterno">
+  <div class="contenedor">
+    <h2>Contacto</h2>
+
+    <div class="contacto-grid">
+      <div class="info-contacto">
+        <h3>Información de contacto</h3>
+
+        <p>
+          <strong>Email:</strong><br>
+          <a href="mailto:info@prueba.com">info@prueba.com</a>
+        </p>
+
+        <p>
+          <strong>Teléfono:</strong><br>
+          <a href="tel:+541121212121">11 2121-2121</a>
+        </p>
+
+        <p>
+          <strong>Ubicación:</strong><br>
+          San Isidro, Provincia de Buenos Aires.
+        </p>
+
+        <!-- Mapa -->
+        <div class="mapa">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13155.023249117652!2d-58.5147575!3d-34.4710188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb03ad8d1437f%3A0xab3b49e671350275!2sSan%20Isidro%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1700000000000!5m2!1ses!2sar" 
+            width="100%" 
+            height="250" 
+            style="border:0; border-radius: 15px;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+      <!-- Formulario -->
+      <form class="form-contacto">
+        <h1>Póngase en contacto con nosotros.</h1>
+        <input type="text" placeholder="Nombre completo" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <textarea placeholder="Mensaje" rows="5" required></textarea>
+        <button type="submit">Enviar consulta</button>
+      </form>
+    </div>
+  </div>
+</section>
+<footer class="footer-profesional">
+  <div class="contenedor footer-grid">
+      
+      <div class="footer-col">
+          <div class="footer-logo-box">
+              <img src="folder/logo.png" alt="Logo" class="footer-logo">
+          </div>
+          <p class="footer-description">Transformando ideas en experiencias digitales de alto impacto.</p>
+      </div>
+
+      <div class="footer-col">
+          <div class="footer-header">
+              <h4>NAVEGACIÓN</h4>
+              <div class="linea-azul"></div>
+          </div>
+          <ul class="footer-links">
+              <li><a href="#sobre-mi">Sobre mí</a></li>
+              <li><a href="#conocimientos">Conocimientos</a></li>
+              <li><a href="#proyectos">Proyectos</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+          </ul>
+      </div>
+
+      <div class="footer-col">
+          <div class="footer-header">
+              <h4>SEGUIME</h4>
+              <div class="linea-azul"></div>
+          </div>
+          <div class="redes-sociales">
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+      </div>
+
+  </div>
+
+  <div class="footer-bottom">
+      <p>&copy; 2026 Olave - Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
