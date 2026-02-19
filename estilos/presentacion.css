@@ -115,6 +115,9 @@ body.dark-mode #seccion-presentacion {
       order: 1;
     }
   
+    .presentacion-texto h1 {
+      font-size: 2.2rem;
+    }
     h1 {
       order: 2;
       font-size: 2.1rem;
