@@ -156,13 +156,46 @@
 
     <section class="section testimonials-section" id="testimonials">
       <div class="container">
-        <span class="eyebrow">TESTIMONIALS</span><div class="section-heading"><h2>What Clients Say<span class="accent-dot">.</span></h2><p>Built on trust, one project at a time.</p></div>
-        <div class="reviews-grid">
-          <article class="review"><div class="review-top"><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><time datetime="2026-03-10">Mar 10, 2026</time></div><p>“I’ve had a great experience working with JJS Services. They’ve been extremely responsive and flexible, and on more than one occasion they’ve helped me out of a real bind. It’s refreshing to work with a team that shows up when they say they will and gets the job done. Highly recommend.”</p><div class="review-author"><span class="avatar" aria-hidden="true">R</span><strong>Real Bergevin</strong></div></article>
-          <article class="review"><div class="review-top"><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><time datetime="2026-01-27">Jan 27, 2026</time></div><p>“JJS Services has been great to work with. They are reliable, transparent, and have been responsive in the permitting process. The process was seamless and fast.”</p><div class="review-author"><span class="avatar" aria-hidden="true">M</span><strong>Michelle Pardoll</strong></div></article>
-          <article class="review"><div class="review-top"><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><time datetime="2026-01-27">Jan 27, 2026</time></div><p>“I’ve had a great experience working with JJS Services. They’ve been extremely responsive and flexible, and on more than one occasion they’ve helped me out of a real bind. It’s refreshing to work with a team that shows up when they say they will and gets the job done. Highly recommend.”</p><div class="review-author"><span class="avatar" aria-hidden="true">R</span><strong>Roly Paredes</strong></div></article>
+        <span class="eyebrow">TESTIMONIALS</span>
+        <div class="section-heading">
+          <h2>What Clients Say<span class="accent-dot">.</span></h2>
+          <p>Built on trust, one project at a time.</p>
         </div>
-        <div class="clients"><h3>Some of Our Clients</h3><div class="client-list"><span>Sushi Yama Restaurant</span><span>Mini Pita</span><span>Little Dania Condos</span><span>Food Town Supermarkets</span><span>The Mediterranean Condos</span><span>Bar Italia Restaurant</span><span>Koto Grill & Habachi</span><span>The Greek Joint Restaurant</span><span>Zion 7th Day Adventists Church</span><span>Grandma's Bakery</span></div></div>
+
+        <!-- WIDGET DE TAGEMBED (Reseñas dinámicas de Google) -->
+        <div class="tagembed-container">
+          <div class="tagembed-widget" style="width:100%;height:100%;overflow:auto;" data-widget-id="338428" data-website="1"></div>
+          <script src="https://widget.tagembed.com/embed.min.js" type="text/javascript" async></script>
+        </div>
+
+        <!-- BOTÓN PARA DEJAR RESEÑA EN GOOGLE -->
+        <div class="review-cta-container">
+          <a 
+            href="https://search.google.com/local/writereview?placeid=ChIJU-IFAK8D2YgRo2cQc6a4jpE" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="btn-write-review">
+            Leave a Review on Google
+          </a>
+        </div>
+
+        <!-- SECCIÓN DE CLIENTES (Intacta) -->
+        <div class="clients">
+          <h3>Some of Our Clients</h3>
+          <div class="client-list">
+            <span>Sushi Yama Restaurant</span>
+            <span>Mini Pita</span>
+            <span>Little Dania Condos</span>
+            <span>Food Town Supermarkets</span>
+            <span>The Mediterranean Condos</span>
+            <span>Bar Italia Restaurant</span>
+            <span>Koto Grill & Habachi</span>
+            <span>The Greek Joint Restaurant</span>
+            <span>Zion 7th Day Adventists Church</span>
+            <span>Grandma's Bakery</span>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -336,7 +369,6 @@
 
   <footer class="sitio-footer">
   <div class="contenedor-footer">
-    <!-- Columna 1: Marca y descripción -->
     <div class="columna-footer marca">
       <img id="logo-footer" src="carpeta/logo-jjs.png" alt="JJS Services Inc." class="logo-footer">
       <p class="descripcion-empresa">
