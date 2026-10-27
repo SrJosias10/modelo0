@@ -1,275 +1,391 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Modelo Profesional</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="estilos/presentacion.css">
-    <link rel="stylesheet" href="estilos/general.css">
-    <link rel="stylesheet" href="estilos/encabezado.css">
-    <link rel="stylesheet" href="estilos/sobre-mi.css">
-    <link rel="stylesheet" href="estilos/contacto.css">
-
-    <script type="module" src="code.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="JJS Services Inc. provides construction and engineering services in South Florida, from planning through final inspection.">
+  <meta name="theme-color" content="#ffffff">
+  <title>JJS Services Inc. | Construction & Engineering</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="footer.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
+  <button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="JJS Services home"><img src="carpeta/logo-jjs.png" alt="JJS Services" width="80" height="76"></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <nav class="nav" id="primary-nav" aria-label="Main navigation">
+        <a href="#about">About Us</a><a href="#services">Services</a><a href="#testimonials">Testimonials</a><a href="#projects">Projects</a><a href="#faq">Help Center</a>
+        <a class="button button-dark nav-cta" href="#contact">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      
+      <div class="hero-content">
+        <div class="hero-tags">
+          <span class="tag tag-green">JJS SERVICES</span>
+          <span class="tag tag-outline">Construction &amp; Engineering</span>
+        </div>
+        
+        <h1 id="hero-title">CONSTRUCTION <span>&amp; ENGINEERING</span></h1>
+        
+        <div class="hero-divider"></div>
 
-<!-- SPLASH -->
-<div id="splash">
-    <video autoplay muted playsinline>
-        <source src="folder/splash.mp4" type="video/mp4">
-    </video>
+        <!-- Imagen colocada debajo del título -->
+        <div class="hero-image">
+          <img src="carpeta/fondo-inicio.png" alt="Commercial building exterior at dusk">
+        </div>
+
+        <p class="hero-description">Professional construction and engineering solutions tailored to your needs, with a focus on quality, safety, and precision.</p>
+        
+        <a class="button button-dark" href="#projects">Our Work <i class="fa-solid fa-location-arrow"></i></a>
+
+        <div class="stats" aria-label="Company highlights">
+          <div class="stat">
+            <span class="stat-icon" aria-hidden="true"><i class="fa-solid fa-circle-check"></i></span>
+            <strong>250<span>+</span></strong>
+            <small>Projects Completed</small>
+          </div>
+
+          <div class="stat">
+            <span class="stat-icon" aria-hidden="true"><i class="fa-solid fa-award"></i></span>
+            <strong>4</strong>
+            <small>State Licenses</small>
+          </div>
+
+          <div class="stat">
+            <span class="stat-icon" aria-hidden="true"><i class="fa-solid fa-briefcase"></i></span>
+            <strong>30<span>+</span></strong>
+            <small>Years of Experience</small>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  
+
+    <section class="section about-section" id="about">
+      <div class="container">
+        <span class="eyebrow">ABOUT US</span>
+        <h2>Company Overview<span class="accent-dot">.</span></h2>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p class="lead">Our journey began long before JJS Services Inc. was founded.</p>
+            <p>It started decades ago, when a young Army veteran named Jack left Brooklyn, New York, and made his way to sunny Florida. With determination and grit, Jack became a licensed Florida state contractor, a small business owner, a devoted husband, father and, eventually, a mentor.</p>
+            <p>One day, Jack crossed paths with a young man named Brad, also from Brooklyn. Brad was eager to learn and soaked up everything Jack had to teach. By then, Jack held multiple state construction licenses and was a respected figure in the South Florida construction scene.</p>
+          </div>
+          <figure class="about-image image-one"><img src="carpeta/about-us-1.png" alt="Construction professionals reviewing plans on site" loading="lazy"></figure>
+          <figure class="about-image image-two"><img src="carpeta/about-us-2.png" alt="Construction team working together over building plans" loading="lazy"></figure>
+          <div class="about-copy story-copy">
+            <p>Fast forward 30 years, three companies, and many children and grandchildren later, Brad and Jack remain close friends. Now a 35-year veteran of the construction industry, Brad founded JJS Services Inc. with a bold vision: to make construction fast, affordable, and accessible.</p>
+            <p>Whether you’re adding an addition to your home, opening a restaurant, or resolving a property violation, JJS Services Inc. was built to be your one-stop solution, from design to final inspection.</p>
+            <p class="story-highlight">The name JJS Services Inc. is a tribute to the man who started it all: <strong>Jack Joel Schulman.</strong></p>
+            <p>Our values are rooted in friendship, mentorship, and family. Brad’s son Trevor now works alongside him, continuing the family tradition and the spirit of good old fashioned hard work.</p>
+            <p>So if you’re in South Florida and looking for a team you can trust, come visit us. And if you're lucky, you just might hear: <em>“Hey guys, what are we building today?”</em></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services-section" id="services">
+  <div class="container center">
+    <span class="eyebrow">SERVICES</span>
+    <h2>How We Help<span class="accent-dot">.</span></h2>
+    <p class="section-intro">At the heart of what we do is a genuine commitment to you. We tackle tough construction challenges by creating custom plans that fit your vision, needs, and budget. Our experienced team of contractors and engineers work closely together, making every step from planning to the final build smooth and straightforward.</p>
+    
+    <div class="services-grid">
+      <article class="service-card">
+        <div class="service-photo">
+          <img src="carpeta/services-1.png" alt="Hard hat and construction plans" loading="lazy">
+        </div>
+        <button type="button" class="service-label service-modal-trigger" data-service="1">
+          Correcting Code Violations <i class="fa-solid fa-location-arrow"></i>
+        </button>
+      </article>
+
+      <article class="service-card">
+        <div class="service-photo">
+          <img src="carpeta/services-2.png" alt="Restaurant interior" loading="lazy">
+        </div>
+        <button type="button" class="service-label service-modal-trigger" data-service="2">
+          Restaurant Buildouts <i class="fa-solid fa-location-arrow"></i>
+        </button>
+      </article>
+
+      <article class="service-card">
+        <div class="service-photo">
+          <img src="carpeta/services-3.png" alt="Architectural plans and drafting tools" loading="lazy">
+        </div>
+        <button type="button" class="service-label service-modal-trigger" data-service="3">
+          Engineering Plans <i class="fa-solid fa-location-arrow"></i>
+        </button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div id="service-modal" class="modal-overlay" aria-hidden="true">
+  <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button type="button" class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+    
+    <div class="modal-body">
+      <span class="eyebrow" id="modal-eyebrow">SERVICES</span>
+      <h2 id="modal-title"><span class="accent-dot">.</span></h2>
+      <div id="modal-body-content"></div>
+
+      <div class="modal-footer">
+        <a href="#contact" class="button button-dark" id="modal-cta-btn">
+          Request a Free Consultation <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
 
-<button id="dark-mode-toggle" class="floating-btn dark-btn" title="Cambiar modo">
-  <i class="fa-solid fa-moon"></i>
-</button>
+    <section class="section testimonials-section" id="testimonials">
+      <div class="container">
+        <span class="eyebrow">TESTIMONIALS</span><div class="section-heading"><h2>What Clients Say<span class="accent-dot">.</span></h2><p>Built on trust, one project at a time.</p></div>
+        <div class="reviews-grid">
+          <article class="review"><div class="review-top"><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><time datetime="2026-03-10">Mar 10, 2026</time></div><p>“I’ve had a great experience working with JJS Services. They’ve been extremely responsive and flexible, and on more than one occasion they’ve helped me out of a real bind. It’s refreshing to work with a team that shows up when they say they will and gets the job done. Highly recommend.”</p><div class="review-author"><span class="avatar" aria-hidden="true">R</span><strong>Real Bergevin</strong></div></article>
+          <article class="review"><div class="review-top"><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><time datetime="2026-01-27">Jan 27, 2026</time></div><p>“JJS Services has been great to work with. They are reliable, transparent, and have been responsive in the permitting process. The process was seamless and fast.”</p><div class="review-author"><span class="avatar" aria-hidden="true">M</span><strong>Michelle Pardoll</strong></div></article>
+          <article class="review"><div class="review-top"><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><time datetime="2026-01-27">Jan 27, 2026</time></div><p>“I’ve had a great experience working with JJS Services. They’ve been extremely responsive and flexible, and on more than one occasion they’ve helped me out of a real bind. It’s refreshing to work with a team that shows up when they say they will and gets the job done. Highly recommend.”</p><div class="review-author"><span class="avatar" aria-hidden="true">R</span><strong>Roly Paredes</strong></div></article>
+        </div>
+        <div class="clients"><h3>Some of Our Clients</h3><div class="client-list"><span>Sushi Yama Restaurant</span><span>Mini Pita</span><span>Little Dania Condos</span><span>Food Town Supermarkets</span><span>The Mediterranean Condos</span><span>Bar Italia Restaurant</span><span>Koto Grill & Habachi</span><span>The Greek Joint Restaurant</span><span>Zion 7th Day Adventists Church</span><span>Grandma's Bakery</span></div></div>
+      </div>
+    </section>
 
-<button id="scroll-up" class="floating-btn scroll-btn" title="Subir">
-  <i class="fa-solid fa-arrow-up"></i>
-</button>
+<section class="section projects-section" id="projects">
+      <div class="container">
+        <span class="eyebrow">PROJECTS</span>
+        <h2>Projects in Hollywood, Florida<span class="accent-dot">.</span></h2>
 
-<!-- HEADER -->
-<section id="opciones" class="fondo-secciones">
-    <nav class="navbar">
-        <a href="#" class="logo">
-            <div class="logo-img">
-                <img src="folder/logo.png" alt="Logo profesional">
+        <!-- Replace the names and descriptions of projects 2 and 3 with the real project information. -->
+        <div class="project-carousel" role="region" aria-roledescription="carousel" aria-label="Featured projects">
+          <div class="project-slides" id="project-slides" aria-live="polite">
+            
+            <article class="project-grid project-slide" role="group" aria-roledescription="slide" aria-label="1 of 3">
+              <figure class="project-image">
+                <img src="carpeta/proyects-1.png" alt="Aerial view of a construction project" loading="lazy">
+                <span class="project-image-tag">SOUTH FLORIDA <i class="fa-solid fa-location-arrow"></i></span>
+              </figure>
+              <div class="project-copy">
+                <span class="overline">FEATURED PROJECT / 01</span>
+                <h3>The Mediterranean Condos</h3>
+                <p>Built from the ground up, this five-story, 24-unit apartment building was an in-house JJS Services construction project completed in 2009 at the height of the financial crisis.</p>
+                <p>Navigating those turbulent conditions sharpened our skills, strengthened our resolve, and reinforced what we do best: finishing the job no matter the challenge. When your project is on the line, you need a battle-tested construction partner you can trust to deliver.</p>
+                <a class="text-link" href="#contact">Let’s build together <i class="fa-solid fa-location-arrow"></i></a>
+              </div>
+            </article>
+
+            <article class="project-grid project-slide" role="group" aria-roledescription="slide" aria-label="2 of 3" hidden>
+              <figure class="project-image">
+                <img src="carpeta/proyects-2.png" alt="Project 2 image" loading="lazy">
+                <span class="project-image-tag">FEATURED PROJECT <i class="fa-solid fa-location-arrow"></i></span>
+              </figure>
+              <div class="project-copy">
+                <span class="overline">FEATURED PROJECT / 02</span>
+                <h3>Project 02</h3>
+                <p>Project details coming soon.</p>
+                <a class="text-link" href="#contact">Let’s build together <i class="fa-solid fa-location-arrow"></i></a>
+              </div>
+            </article>
+
+            <article class="project-grid project-slide" role="group" aria-roledescription="slide" aria-label="3 of 3" hidden>
+              <figure class="project-image">
+                <img src="carpeta/proyects-3.png" alt="Project 3 image" loading="lazy">
+                <span class="project-image-tag">FEATURED PROJECT <i class="fa-solid fa-location-arrow"></i></span>
+              </figure>
+              <div class="project-copy">
+                <span class="overline">FEATURED PROJECT / 03</span>
+                <h3>Project 03</h3>
+                <p>Project details coming soon.</p>
+                <a class="text-link" href="#contact">Let’s build together <i class="fa-solid fa-location-arrow"></i></a>
+              </div>
+            </article>
+
+          </div>
+
+          <div class="carousel-controls" role="group" aria-label="Project carousel controls" hidden>
+            <button type="button" class="carousel-arrow" data-carousel="prev" aria-label="Previous project" aria-controls="project-slides"><i class="fa-solid fa-chevron-left"></i></button>
+            <div class="carousel-dots" role="group" aria-label="Choose project">
+              <button type="button" class="carousel-dot" data-slide="0" aria-label="Show project 1" aria-current="true"></button>
+              <button type="button" class="carousel-dot" data-slide="1" aria-label="Show project 2"></button>
+              <button type="button" class="carousel-dot" data-slide="2" aria-label="Show project 3"></button>
             </div>
-        </a>
-
-        <div class="menu-links" id="menu-links">
-            <a href="#sobre-mi" class="linksmenu">Sobre mí</a>
-            <a href="#conocimientos" class="linksmenu">Conocimientos</a>
-            <a href="#proyectos" class="linksmenu">Proyectos</a>
-            <a href="#contacto" class="linksmenu">Contacto</a>
-        </div>
-
-        <button class="menu-toggle" id="menu-toggle">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-    </nav>
-</section>
-
-<!-- PRESENTACIÓN -->
-<section id="seccion-presentacion">
-    <div class="presentacion-grid">
-  
-      <div class="presentacion-texto">
-        <span class="badge">Diseño profesional</span>
-        <h1>Tu presencia digital empieza acá</h1>
-        <p>
-          Diseñamos páginas web modernas, rápidas y pensadas para convertir visitas en clientes.
-          Mostrá tu trabajo con una imagen profesional y diferenciá tu marca desde el primer segundo.
-        </p>
-  
-        <div class="presentacion-cta">
-          <button class="button">Contactar</button>
-          <a href="#proyectos" class="link-secundario">Ver proyectos</a>
+            <button type="button" class="carousel-arrow" data-carousel="next" aria-label="Next project" aria-controls="project-slides"><i class="fa-solid fa-chevron-right"></i></button>
+            <span class="carousel-count" aria-hidden="true"><span data-current>01</span> / 03</span>
+          </div>
         </div>
       </div>
-  
-      <div class="presentacion-imagen">
-        <img src="folder/hero-web.png" alt="Diseño web profesional">
-      </div>
-  
-    </div>
-  </section>
-  
+    </section>
 
-<!-- SOBRE MÍ -->
-<section id="sobre-mi" class="seccion">
-  <div class="contenedor">
-    <h2>Sobre mí</h2>
-    <div class="contenedor-foto">
-      <img src="folder/yo.png" 
-           alt="Desarrollador web profesional" class="foto-perfil">
-      <div class="etiqueta-foto">Desarrollador Web</div>
+    <section class="section faq-section" id="faq">
+      <div class="container faq-layout">
+        <div>
+          <span class="eyebrow">HELP CENTER</span>
+          <h2>Frequently Asked Questions<span class="accent-dot">.</span></h2>
+          <p>Everything you need to get started. Have another question?</p>
+          <a class="button button-dark" href="#contact">Get in touch <i class="fa-solid fa-location-arrow"></i></a>
+        </div>
+        <div class="faq-list">
+          <details open>
+            <summary>What is your process from start to finish?<span aria-hidden="true"></span></summary>
+            <p>We start with a free consultation, then submit your plans and permits for city approval. Once approved, construction begins. Throughout the project, we coordinate all required inspections. After the final inspection, we hand the completed project back to you.</p>
+          </details>
+          <details>
+            <summary>How long will my project take?<span aria-hidden="true"></span></summary>
+            <p>Project timelines vary depending on the scope of work, permitting and inspections. We can discuss your specific project during your consultation.</p>
+          </details>
+          <details>
+            <summary>Do you handle permits and inspections?<span aria-hidden="true"></span></summary>
+            <p>As your contractor, we take care of the permit process and coordinate required inspections.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <span class="eyebrow">CONTACT US</span>
+        <div class="contact-heading">
+          <h2>Let’s build something<br>great together<span class="accent-dot">.</span></h2>
+          <p>Thank you for considering JJS Services Inc. Please fill out our intake form before your free consultation. If you have any questions, our team is here to assist you.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="form-panel">
+            <div class="form-title">
+              <h3>Project Intake Form</h3>
+              <i class="fa-regular fa-pen-to-square"></i>
+            </div>
+            <form id="intake-form">
+              <div class="fields-grid">
+                <label>First and Last Name <span>*</span>
+                  <input name="name" type="text" autocomplete="name" placeholder="Your full name" required>
+                </label>
+                <label>Email <span>*</span>
+                  <input name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+                </label>
+                <label>Property Owner / Authorized Signer <span>*</span>
+                  <input name="signer" type="text" placeholder="Name of authorized signer" required>
+                </label>
+                <label>Phone <span>*</span>
+                  <input name="phone" type="tel" autocomplete="tel" placeholder="(000) 000-0000" required>
+                </label>
+                <label class="full">Property Address <span>*</span>
+                  <input name="address" type="text" autocomplete="street-address" placeholder="Street address, city, state and ZIP" required>
+                </label>
+                <fieldset class="full">
+                  <legend>Is this property in an HOA community or building? <span>*</span></legend>
+                  <div class="radio-group">
+                    <label><input type="radio" name="hoa" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="hoa" value="No"> No</label>
+                  </div>
+                </fieldset>
+                <label class="full">Reason for Contact <span>*</span>
+                  <input name="reason" type="text" placeholder="How can we help?" required>
+                </label>
+                <label class="full">What is the scope of work? Is this new work or after-the-fact work? <span>*</span>
+                  <textarea name="scope" rows="3" placeholder="Tell us about your project" required></textarea>
+                </label>
+                <label class="full">If under a violation from the city, let us know if you have a magistrate court date or are currently receiving fines.
+                  <textarea name="violation" rows="3" placeholder="Add any relevant details (optional)"></textarea>
+                </label>
+              </div>
+              <button class="button button-dark submit-button" type="submit">Submit <i class="fa-solid fa-location-arrow"></i></button>
+              <p class="form-note">Submitting opens your email app with your information. No information is sent automatically.</p>
+              <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+          <aside class="contact-aside">
+            <div class="contact-card">
+              <span class="overline">LET’S CONNECT</span>
+              <h3>We’re here to help.</h3>
+              <p>Tell us about your project and let’s take the next step together.</p>
+              <a class="contact-item" href="mailto:Admin@jjsservicesinc.com">
+                <span class="contact-icon" aria-hidden="true"><i class="fa-regular fa-envelope"></i></span>
+                <span><small>EMAIL US</small>Admin@jjsservicesinc.com</span>
+                <i class="fa-solid fa-location-arrow"></i>
+              </a>
+              <a class="contact-item" href="tel:+19547194689">
+                <span class="contact-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></span>
+                <span><small>CALL US</small>(954) 719-4689</span>
+                <i class="fa-solid fa-location-arrow"></i>
+              </a>
+              <div class="contact-item">
+                <span class="contact-icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></span>
+                <span><small>VISIT US</small>1033 NE 44th St, Oakland Park, FL 33334</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="sitio-footer">
+  <div class="contenedor-footer">
+    <!-- Columna 1: Marca y descripción -->
+    <div class="columna-footer marca">
+      <img id="logo-footer" src="carpeta/logo-jjs.png" alt="JJS Services Inc." class="logo-footer">
+      <p class="descripcion-empresa">
+        Professional construction and engineering solutions tailored to your needs, with a focus on quality, safety, and precision.
+      </p>
     </div>
-    <p>
-      Creo páginas web de información y portafolios para profesionales y empresas que desean mostrarse 
-      al mercado de forma efectiva. Mi servicio incluye diseño, desarrollo y soporte completo para 
-      que tu presencia digital destaque.
-    </p>
-    
-    <div class="cartas">
-      <div class="card-custom">
-        <i class="fas fa-file-code"></i>
-        <h3>Páginas Web de Portafolio</h3>
-        <p>Desarrollo sitios web informativos profesionales que muestran tu trabajo, experiencia y habilidades de manera atractiva y efectiva.</p>
-        <span class="etiqueta-servicio">Servicio Principal</span>
-      </div>
-      
-      <div class="card-custom">
-        <i class="fas fa-globe"></i>
-        <h3>Instalación de Dominio</h3>
-        <p>Configuro y conecto tu dominio personalizado para que tengas una presencia profesional con tu propia dirección web.</p>
-        <span class="etiqueta-servicio">Servicio Adicional</span>
-      </div>
-      
-      <div class="card-custom">
-        <i class="fas fa-sync-alt"></i>
-        <h3>Actualizaciones Futuras</h3>
-        <p>Gracias al almacenamiento en GitHub, podremos modificar o actualizar tu página fácilmente cuando tu negocio crezca o cambie.</p>
-        <span class="etiqueta-servicio">Beneficio Adicional</span>
-      </div>
+
+    <!-- Columna 2: Navegación del Menú -->
+    <div class="columna-footer">
+      <h4 class="titulo-columna">Menu</h4>
+      <ul class="lista-links">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#faq">Help Center</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 3: Información de Contacto -->
+    <div class="columna-footer">
+      <h4 class="titulo-columna">Contact</h4>
+      <ul class="lista-contacto">
+        <li>
+          <a href="mailto:Admin@jjsservicesinc.com">
+            <i class="fa-solid fa-envelope icono-contacto"></i>Admin@jjsservicesinc.com
+          </a>
+        </li>
+        <li>
+          <a href="tel:+19547194689">
+            <i class="fa-solid fa-phone icono-contacto"></i>(954) 719-4689
+          </a>
+        </li>
+        <li>
+          <div class="item-ubicacion">
+            <i class="fa-solid fa-location-dot icono-contacto"></i>1033 NE 44th St, Oakland Park, FL 33334
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
-</section>
 
-<!-- CONOCIMIENTOS -->
-<section id="conocimientos" class="seccion fondo-alterno">
-    <div class="contenedor">
-        <h2>Conocimientos</h2>
-
-        <div class="cartas">
-            <div class="card-custom">
-                <i class="fa-solid fa-code"></i>
-                <h3>Desarrollo Web</h3>
-                <p>HTML, CSS, JavaScript, buenas prácticas y rendimiento.</p>
-            </div>
-
-            <div class="card-custom">
-                <i class="fa-solid fa-palette"></i>
-                <h3>Diseño UI</h3>
-                <p>Interfaces modernas, limpias y orientadas al usuario.</p>
-            </div>
-
-            <div class="card-custom">
-                <i class="fa-solid fa-briefcase"></i>
-                <h3>Soluciones Profesionales</h3>
-                <p>Webs institucionales listas para producción.</p>
-            </div>
-        </div>
+  <!-- Copyright y Base -->
+  <div class="base-footer">
+    <div class="contenedor-base">
+      <p>© <span id="year">2026</span> JJS Services Inc. All rights reserved.</p>
     </div>
-</section>
-
-<!-- PROYECTOS -->
-<section id="proyectos" class="seccion">
-    <div class="contenedor">
-        <h2>Proyectos</h2>
-
-        <div class="cartas">
-            <div class="proyecto">
-                <img src="folder/proyecto1.jpg" alt="Proyecto ejemplo">
-                <div class="info-proyecto">
-                    <h3>Proyecto Institucional</h3>
-                    <p>Web profesional orientada a servicios y captación de clientes.</p>
-                </div>
-            </div>
-
-            <div class="proyecto">
-                <img src="folder/proyecto2.jpg" alt="Proyecto ejemplo">
-                <div class="info-proyecto">
-                    <h3>Landing Page</h3>
-                    <p>Diseño moderno y enfocado en conversión.</p>
-                </div>
-            </div>
-
-            <div class="proyecto">
-                <img src="folder/proyecto3.jpg" alt="Proyecto ejemplo">
-                <div class="info-proyecto">
-                    <h3>Plataforma Digital</h3>
-                    <p>Estructura escalable y adaptable a distintos rubros.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="contacto" class="seccion fondo-alterno">
-  <div class="contenedor">
-    <h2>Contacto</h2>
-
-    <div class="contacto-grid">
-      <div class="info-contacto">
-        <h3>Información de contacto</h3>
-
-        <p>
-          <strong>Email:</strong><br>
-          <a href="mailto:info@prueba.com">info@prueba.com</a>
-        </p>
-
-        <p>
-          <strong>Teléfono:</strong><br>
-          <a href="tel:+541121212121">11 2121-2121</a>
-        </p>
-
-        <p>
-          <strong>Ubicación:</strong><br>
-          San Isidro, Provincia de Buenos Aires.
-        </p>
-
-        <!-- Mapa -->
-        <div class="mapa">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13155.023249117652!2d-58.5147575!3d-34.4710188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb03ad8d1437f%3A0xab3b49e671350275!2sSan%20Isidro%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1700000000000!5m2!1ses!2sar" 
-            width="100%" 
-            height="250" 
-            style="border:0; border-radius: 15px;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
-      </div>
-      <!-- Formulario -->
-      <form class="form-contacto">
-        <h1>Póngase en contacto con nosotros.</h1>
-        <input type="text" placeholder="Nombre completo" required>
-        <input type="email" placeholder="Correo electrónico" required>
-        <textarea placeholder="Mensaje" rows="5" required></textarea>
-        <button type="submit">Enviar consulta</button>
-      </form>
-    </div>
-  </div>
-</section>
-<footer class="footer-profesional">
-  <div class="contenedor footer-grid">
-      
-      <div class="footer-col">
-          <div class="footer-logo-box">
-              <img src="folder/logo.png" alt="Logo" class="footer-logo">
-          </div>
-          <p class="footer-description">Transformando ideas en experiencias digitales de alto impacto.</p>
-      </div>
-
-      <div class="footer-col">
-          <div class="footer-header">
-              <h4>NAVEGACIÓN</h4>
-              <div class="linea-azul"></div>
-          </div>
-          <ul class="footer-links">
-              <li><a href="#sobre-mi">Sobre mí</a></li>
-              <li><a href="#conocimientos">Conocimientos</a></li>
-              <li><a href="#proyectos">Proyectos</a></li>
-              <li><a href="#contacto">Contacto</a></li>
-          </ul>
-      </div>
-
-      <div class="footer-col">
-          <div class="footer-header">
-              <h4>SEGUIME</h4>
-              <div class="linea-azul"></div>
-          </div>
-          <div class="redes-sociales">
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-              <a href="#"><i class="fa-brands fa-github"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          </div>
-      </div>
-
-  </div>
-
-  <div class="footer-bottom">
-      <p>&copy; 2026 Olave - Todos los derechos reservados.</p>
   </div>
 </footer>
-
-<script src="script.js"></script>
 </body>
 </html>
